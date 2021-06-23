@@ -1,0 +1,90 @@
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	font-weight: bold;
+	font-size: 150%;
+
+}
+
+.section-one {
+	margin: 0;
+	padding-left: 30px;
+}
+.col-1-of-3 {
+	position: relative;
+	width: 33%;
+	float: left;
+	bborder: 1px solid grey;
+	padding: 35px 20px 15px 15px;
+}
+
+.inner-column {
+	position: relative;
+	border: 1px solid grey;
+	padding: 40px 20px 20px 20px;
+	background-color: lightgrey;
+
+}
+
+.project-block-small{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	border: 1px solid grey;
+	margin: 0;
+	padding: 5px 7px 5px 7px;
+}
+
+#first-one {
+	background-color: lightpink;
+}
+
+#beef {
+	background-color: indianred;
+}
+
+#sushi{
+	background-color: lightyellow;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-1-of-3{
+		width: 50%;
+		padding-right: 25px;
+		padding-left: 0px;
+	}
+
+	#third-block{
+		width: 100%;
+		padding-top: 10px;
+	}
+	.menu {
+		font-size: 200%;
+	}
+}
+
+@media (max-width: 767px) {
+	.col-1-of-3 {
+		width: 100%;
+		padding-top: 15px;
+		padding-bottom: 0px;
+		padding-left: 0px;
+		padding-right: 25px;
+	}
+
+	.menu {
+		font-size: 200%;
+	}
+}
